@@ -7,7 +7,6 @@ async function fetch(request: http.Request, context: Context): Promise<http.Resp
 	const result: any = {
 		name: data.name,
 		version: data.version,
-		test: "testing",
 	}
 	if ((await context.authenticate(request)) == "admin") {
 		result.environment = context.environment
