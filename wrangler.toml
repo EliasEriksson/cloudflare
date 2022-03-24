@@ -19,3 +19,6 @@ main = "./index.mjs"
 	vars = {  }
 [dev]
 	port = 8999
+
+[site]
+bucket = "./www/"

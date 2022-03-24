@@ -4,7 +4,6 @@ import * as data from "../package.json"
 import { router } from "../router"
 
 async function fetch(request: http.Request, context: Context): Promise<http.Response.Like | any> {
-	console.log("hello world!")
 	const result: any = {
 		name: data.name,
 		version: data.version,
@@ -16,4 +15,5 @@ async function fetch(request: http.Request, context: Context): Promise<http.Resp
 
 	return result
 }
+
 router.add("GET", "/version", fetch)
