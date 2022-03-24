@@ -51,7 +51,7 @@
     "deploy": "wrangler login && wrangler publish; wrangler logout",
     "login": "wrangler login",
     "start": "wrangler dev --env development",
-    "miniflare": "miniflare dist/index.mjs --watch --live-reload"
+    "miniflare": "miniflare dist/index.mjs --root . --watch --live-reload"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.3.1",
